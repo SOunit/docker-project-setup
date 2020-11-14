@@ -10,3 +10,7 @@ services:
     build:
       dockerfile: Dockerfile.dev
       context: ./node
+  client:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./client
