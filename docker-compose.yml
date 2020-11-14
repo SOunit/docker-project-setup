@@ -6,3 +6,11 @@ services:
       context: ./nginx
     ports:
       - 80:80
+  node:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./node
+  client:
+    build:
+      dockerfile: Dockerfile.dev
+      context: ./client
